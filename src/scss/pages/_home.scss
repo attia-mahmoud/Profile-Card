@@ -1,3 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+body {
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: calc(-50vw) top, calc(50vw) calc(60vh);
+  background-size: min(100%, 50rem);
+}

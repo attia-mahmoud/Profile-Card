@@ -1,0 +1,26 @@
+@use "../utilities/flow" as *;
+.profile {
+  padding-top: 4rem;
+  @include flex(1rem, column, space-around, center);
+
+  &-info {
+    div {
+      @include flex(0.5rem, row, space-around, center);
+      margin-bottom: 0.5rem;
+    }
+    text-align: center;
+  }
+
+  .line-break {
+    margin-top: 0.5rem;
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
+  }
+
+  &-stats-container {
+    margin-block: 0.5rem;
+    @include flex(4rem, row, space-around, center);
+    text-align: center;
+  }
+}
