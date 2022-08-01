@@ -324,14 +324,14 @@ main {
   border-radius: 20px;
 }
 main .header {
-  background-image: url("/bg-pattern-card.b4117a70.svg");
+  background-image: url("./dist/bg-pattern-card.b4117a70.svg");
   height: 40%;
   border-radius: 20px 20px 0 0;
 }
 
 body {
-  background-image: url("/bg-pattern-top.fe97585b.svg"),
-    url("/bg-pattern-bottom.7d0944a5.svg");
+  background-image: url("./dist/bg-pattern-top.fe97585b.svg"),
+    url("./dist/bg-pattern-bottom.7d0944a5.svg");
   background-repeat: no-repeat;
   background-position: left -10vw top -40vh, 60vw 60vh;
   background-size: contain;
