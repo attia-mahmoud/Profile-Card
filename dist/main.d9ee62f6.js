@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\bg-pattern-card.svg":[["bg-pattern-card.b4117a70.svg","src/scss/images/bg-pattern-card.svg"],"src/scss/images/bg-pattern-card.svg"],"./images\\bg-pattern-top.svg":[["bg-pattern-top.fe97585b.svg","src/scss/images/bg-pattern-top.svg"],"src/scss/images/bg-pattern-top.svg"],"./images\\bg-pattern-bottom.svg":[["bg-pattern-bottom.7d0944a5.svg","src/scss/images/bg-pattern-bottom.svg"],"src/scss/images/bg-pattern-bottom.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\assets\\images\\bg-pattern-card.svg":[["bg-pattern-card.eafe4d86.svg","src/assets/images/bg-pattern-card.svg"],"src/assets/images/bg-pattern-card.svg"],"./..\\assets\\images\\bg-pattern-top.svg":[["bg-pattern-top.f298e9dc.svg","src/assets/images/bg-pattern-top.svg"],"src/assets/images/bg-pattern-top.svg"],"./..\\assets\\images\\bg-pattern-bottom.svg":[["bg-pattern-bottom.0d2ad443.svg","src/assets/images/bg-pattern-bottom.svg"],"src/assets/images/bg-pattern-bottom.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58450" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57560" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
