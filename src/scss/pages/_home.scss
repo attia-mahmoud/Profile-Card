@@ -3,8 +3,8 @@
 // -----------------------------------------------------------------------------
 
 body {
-  background-image: url("./images/bg-pattern-top.svg"),
-    url("./images/bg-pattern-bottom.svg");
+  background-image: url("../assets/images/bg-pattern-top.svg"),
+    url("../assets/images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   background-position: left -10vw top -40vh, calc(60vw) calc(60vh);
   background-size: contain;
