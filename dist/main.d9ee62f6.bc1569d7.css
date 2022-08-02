@@ -324,13 +324,12 @@ main {
   border-radius: 20px;
 }
 main .header {
-  background-image: url("/9ef9b9c322e90c201553b7fbc91cca48.svg");
   height: 40%;
   border-radius: 20px 20px 0 0;
 }
 
 body {
-  background-image: url("/f36da834be936ce45dc7564ea1787f6e.svg"), url("/7ffce146adf0b2a5549a29c791a969ee.svg");
+  background-image: url("/622b892ca6c7990a9352f81fa6c3d5c3.svg"), url("/ba18488e278027d8875098e7fd8c13d9.svg");
   background-repeat: no-repeat;
   background-position: left -10vw top -40vh, 60vw 60vh;
   background-size: contain;
