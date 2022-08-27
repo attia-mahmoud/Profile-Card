@@ -1,4 +1,5 @@
 @use "../utilities/flow" as *;
+
 .profile {
   padding-top: 4rem;
   @include flex(1rem, column, space-around, center);

@@ -3,5 +3,15 @@
   top: 25%;
   left: 37%;
   border-radius: 50%;
-  border: 5px solid white;
+  padding: 5px;
+  animation: 3s ease 0s infinite pulse;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color:  hsla(188, 74%, 42%, 1);
+  }
+  50% {
+    background-color:  hsla(188, 74%, 42%, 0);
+  }
 }

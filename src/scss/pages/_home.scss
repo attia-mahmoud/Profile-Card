@@ -4,6 +4,18 @@
 
 body {
   background-repeat: no-repeat;
-  background-position: left -10vw top -40vh, calc(60vw) calc(60vh);
   background-size: contain;
+  backdrop-filter: blur( 4px );
+  animation: 20s ease 0s infinite slide;
+  
+}
+
+@keyframes slide {
+  0%, 100% {
+    background-position: left -20vw top -40vh, calc(80vw) calc(60vh);
+  }
+  50% {
+    background-position: left 10vw top -40vh, calc(40vw) calc(60vh);
+  }
+  
 }

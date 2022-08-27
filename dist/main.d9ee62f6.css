@@ -5,6 +5,7 @@
   --clr-primary-dark-cyan: hsl(185deg, 75%, 39%);
   --clr-primary-dark-blue: hsl(229deg, 23%, 23%);
   --clr-primary-light-gray: hsl(227deg, 10%, 46%);
+  --clr-primary-white: #ffffff;
   --clr-neutral-dark-gray: hsl(0deg, 0%, 59%);
   --fs-100: 0.7875rem;
   --fs-200: 0.9rem;
@@ -249,6 +250,14 @@ body {
   background-color: hsl(227deg, 10%, 46%);
 }
 
+.text-primary-white {
+  color: #ffffff;
+}
+
+.bg-primary-white {
+  background-color: #ffffff;
+}
+
 .text-neutral-dark-gray {
   color: hsl(0deg, 0%, 59%);
 }
@@ -278,9 +287,18 @@ body {
   top: 25%;
   left: 37%;
   border-radius: 50%;
-  border: 5px solid white;
+  padding: 5px;
+  animation: 3s ease 0s infinite pulse;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    background-color: hsl(188deg, 74%, 42%);
+  }
+  50% {
+    background-color: hsla(188deg, 74%, 42%, 0);
+  }
+}
 .profile {
   padding-top: 4rem;
   display: flex;
@@ -318,21 +336,61 @@ body {
 
 main {
   position: relative;
-  background-color: white;
+  background: hsla(183deg, 100%, 50%, 0.404);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
   width: 23rem;
   height: 25rem;
   border-radius: 20px;
+  color: white;
+  animation: 3s ease 0s infinite beat;
+  cursor: pointer;
+  transition: all 600ms ease;
 }
 main .header {
   height: 40%;
   border-radius: 20px 20px 0 0;
 }
 
+main:hover {
+  filter: brightness(92%);
+}
+
+.animated-text {
+  animation: move 4s linear infinite;
+  background-image: linear-gradient(to right, #AEE6E6, #B8FFF9, #c6f7f1, #EFFFFD, #AEE6E6);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes beat {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  30%, 80% {
+    transform: scale(0.98);
+  }
+}
+@keyframes move {
+  to {
+    background-position: 200% center;
+  }
+}
 body {
-  background-image: url("/bg-pattern-top.47c135a9.svg"), url("/bg-pattern-bottom.76aa3d76.svg");
   background-repeat: no-repeat;
-  background-position: left -10vw top -40vh, 60vw 60vh;
   background-size: contain;
+  backdrop-filter: blur(4px);
+  animation: 20s ease 0s infinite slide;
+}
+
+@keyframes slide {
+  0%, 100% {
+    background-position: left -20vw top -40vh, 80vw 60vh;
+  }
+  50% {
+    background-position: left 10vw top -40vh, 40vw 60vh;
+  }
 }
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */
